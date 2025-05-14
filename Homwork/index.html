@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CV</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            position: relative;
+        }
+        table {
+            width: 60%;
+            background-color: white;
+            border-collapse: collapse;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            border: 2px solid #333; 
+            position: relative;
+        }
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #333; 
+            color: white;
+            font-size: 20px;
+        }
+        td {
+            font-size: 18px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0 auto;
+            width: 90%;
+        }
+        li {
+            padding: 8px 0;
+            position: relative;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        li:last-child {
+            border-bottom: none;
+        }
+        li::before {
+            content: '\2022';
+            color: #333; 
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        .profile-photo {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #333; 
+            margin: 15px auto;
+            display: block;
+            padding: 5px;
+            background-color: #f4f4f4;
+            box-shadow: 0 0 0 10px #333; 
+        }
+        .logo-container {
+            position: absolute;
+            top: -12px;
+            right: -10px;
+            width: 80px;
+            height: 80px;
+            border: 2px solid #333; 
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            overflow: hidden;
+        }
+        .logo-img {
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+        }
+        p b {
+            color: white;
+        }
+        .highlight {
+            background-color: #444; 
+            padding: 8px 12px;
+            border-radius: 5px;
+            display: inline-block;
+            color: white;
+            margin-bottom: 15px;
+        }
+        .skill-highlight {
+            color: #ffcc00; 
+            font-weight: bold;
+        }
+        .project-title {
+            font-weight: bold;
+            display: block;
+            margin-top: 5px;
+            color: #333;
+        }
+        .project-details {
+            display: block;
+            margin-left: 20px;
+            font-size: 16px;
+            color: #555;
+        }
+        tfoot td {
+            background-color: #333; 
+            color: white;
+            font-style: italic;
+            font-size: 16px;
+        }
+        .contact-text {
+            color: #ddd; 
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <table cellspacing="0" cellpadding="10">
+        <thead>
+            <tr>
+                <th style="position: relative;">
+                    <div class="logo-container">
+                        <img src="Q.jpg" class="logo-img" alt="Logo">
+                    </div>
+                    
+                    <p><b>QUTAIBA AL-MOKADDAM</b></p>
+                    <p><b>SN:</b> 2210213597</p>
+                    
+                    <img src="Qutaiba.jpg" class="profile-photo" alt="Profile Picture">
+                    
+                    <div class="contact-text">
+                        <b>Email:</b> qutaibaalmokaddam2001@gmail.com <br>
+                        <b>Phone No:</b> +90 5062734939
+                    </div>
+                </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>
+                    <p class="highlight"><b>Skills</b></p>
+                    <ul>
+                        <li><b>Programming Languages:</b> <span class="skill-highlight">Java, C, Python</span></li>
+                        <li><b>Web Development:</b> <span class="skill-highlight">HTML, CSS, JavaScript</span></li>
+                        <li><b>Database:</b> <span class="skill-highlight">MySQL, MongoDB</span></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="highlight"><b>Languages</b></p>
+                    <ul>
+                        <li><b>English:</b> <span class="skill-highlight">Fluent</span></li>
+                        <li><b>Arabic:</b> <span class="skill-highlight">Native</span></li>
+                        <li><b>Turkish:</b> <span class="skill-highlight">Intermediate</span></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="highlight"><b>Education</b></p>
+                    <ul>
+                        <li>
+                            <span class="project-title">Bachelor's Degree in Computer Engineering</span>
+                            <span class="project-details">Karabuk University (2022-Present)</span>
+                        </li>
+                        <li>
+                            <span class="project-title">Diploma in English Language</span>
+                            <span class="project-details">Yemen Tech Institute (2018-2020)</span>
+                        </li>
+                        <li>
+                            <span class="project-title">High School Diploma</span>
+                            <span class="project-details">Al-Falah School, Yemen (2018)</span>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="highlight"><b>Projects</b></p>
+                    <ul>
+                        <li>
+                            <span class="project-title">E-Library Management System</span>
+                            <span class="project-details">- Developed with Java and MySQL</span>
+                            <span class="project-details">- Implemented user authentication and book tracking</span>
+                        </li>
+                        <li>
+                            <span class="project-title">E-Commerce Website</span>
+                            <span class="project-details">- Built with HTML, CSS, JavaScript</span>
+                            <span class="project-details">- Integrated payment gateway</span>
+                        </li>
+                        <li>
+                            <span class="project-title">Student Portal</span>
+                            <span class="project-details">- Created using Python and Django</span>
+                            <span class="project-details">- Features grade tracking and course registration</span>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>
+                    <p>Thank you for viewing my CV!</p>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
